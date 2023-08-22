@@ -2,7 +2,7 @@
 
 # Experimental App Studio setup script.
 
-# Invoke with curl https://raw.githubusercontent.com/kernel-panic-42/bas-dotfiles/main/bassetup | bash
+# Invoke with curl https://raw.githubusercontent.com/kernel-panic-42/bas-dotfiles/main/setup | bash
 # when in the terminal of a new App Studio dev space.
 
 set -o errexit
