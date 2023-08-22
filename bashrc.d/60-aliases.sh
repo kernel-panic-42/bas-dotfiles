@@ -19,6 +19,7 @@ alias ic='gh issue comment'
 
 # Show directory symbol (/) and hidden directories
 alias ls='ls -p -a --color=auto'
+alias ll='ls -al --color=auto'
 
 ## Single char aliases
 # alias s='cd $HOME/work/scratch'
@@ -33,7 +34,7 @@ alias ls='ls -p -a --color=auto'
 alias st='git status'
 # alias dpa='docker ps -a --format "table {{.Names}}\t{{.State}}\t{{.RunningFor}}\t{{.Networks}}\t{{.Mounts}}"'
 # alias dcl='docker context list'
-alias vi=nvim
-alias vim=nvim
+#alias vi=nvim
+#alias vim=nvim
 
 # alias gapi='gh api --paginate --cache 1h'
