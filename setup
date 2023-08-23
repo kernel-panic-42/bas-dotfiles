@@ -43,12 +43,7 @@ main() {
   backup ".bashrc"
   setup_dotfiles
   
-  cp "$dotfiles/bash_aliases" "$HOME/.bash_aliases"
-  
-  echo "if [ -f ~/.bash_aliases ]; then
-		. ~/.bash_aliases
-	   fi" >> "$HOME/.bashrc"
-  
+  cp "$dotfiles/bash_aliases" "$HOME/.bash_aliases" 
 }
 
 main "$@"
