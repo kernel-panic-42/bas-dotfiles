@@ -9,7 +9,6 @@ set -o errexit
 # Script-global vars
 declare dotfiles="$HOME/.dotfiles"
 declare backupdir="$HOME/.backups"
-declare execdir="$HOME/bin"
 
 # Make backup of a file (not even sure if backups are really neccessary,
 # as this is for a freshly minted dev space.
@@ -32,7 +31,6 @@ setup_dotfiles() {
 
 setup_dirs() {
   [[ -d "$backupdir" ]] || mkdir "$backupdir"
-  [[ -d "$execdir" ]] || mkdir "$execdir"
 }
 
 # Install common utilities
@@ -44,6 +42,7 @@ main() {
   setup_dotfiles
   
   cp "$dotfiles/bash_aliases" "$HOME/.bash_aliases" 
+  cp "$dotfiles/bash_functions" "$HOME/.bash_functions" 
 }
 
 main "$@"

@@ -1,5 +1,5 @@
 alias vi=vim
-alias python=/usr/local/bin/python3
+alias python='python3'
 alias branch='git checkout -b'
 alias whitespace="sed 's/ /·/g;s/\t/￫/g;s/\r/§/g;s/$/¶/g'"
 alias ls='ls -p -a --color=auto'
