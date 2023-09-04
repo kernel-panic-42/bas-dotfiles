@@ -17,7 +17,10 @@ backup() {
   if [[ -e "$HOME/$1" ]]; then
     local file
     file="$(echo "$1" | tr '\/' '-')"
-    cp "$HOME/$1" "$backupdir/$file"
+    current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+    backup_file=$file.$current_time
+
+    cp "$HOME/$1" "$backupdir/$backup_file"
   fi
 }
 
@@ -41,6 +44,7 @@ main() {
   backup ".bashrc"
   setup_dotfiles
   
+  cp "$dotfiles/bashrc" "$HOME/.bashrc" 
   cp "$dotfiles/bash_aliases" "$HOME/.bash_aliases" 
   cp "$dotfiles/bash_functions" "$HOME/.bash_functions" 
 }
